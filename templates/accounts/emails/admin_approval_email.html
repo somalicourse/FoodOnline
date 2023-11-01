@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Hi {{user.first_name}},
+
+{% if is_approved %}
+Congratuations! your restaurant has bee approved by us
+{% else %}
+We're Sorry! you are not eligible for publishing your food menu on our marketplace
+{% endif %}
+
+{% endautoescape %}
